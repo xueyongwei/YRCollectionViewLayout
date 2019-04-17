@@ -26,8 +26,8 @@ protocol YRbcsDelegateFlowLayout: UICollectionViewDelegateFlowLayout {
 }
 
 
-/// Yuri Background Color Section `s UICollectionViewFlowLayout
-class YRbcsFlowLayout: UICollectionViewFlowLayout {
+/// 分组背景色及圆角布局
+class YRSectionBgColorFlowLayout: UICollectionViewFlowLayout {
     
     /// 装饰视图的属性
     fileprivate var decorationAtts = [YRbcsLayoutAttributes]()

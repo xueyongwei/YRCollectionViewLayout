@@ -12,10 +12,11 @@
 		4733BD272266C2530087979C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4733BD252266C2530087979C /* Main.storyboard */; };
 		4733BD292266C2550087979C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4733BD282266C2550087979C /* Assets.xcassets */; };
 		4733BD2C2266C2550087979C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4733BD2A2266C2550087979C /* LaunchScreen.storyboard */; };
-		4733BD352266C2890087979C /* YRbcsFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4733BD342266C2890087979C /* YRbcsFlowLayout.swift */; };
+		4733BD352266C2890087979C /* YRSectionBgColorFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4733BD342266C2890087979C /* YRSectionBgColorFlowLayout.swift */; };
 		4733BD382266D21E0087979C /* YRbgcCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4733BD372266D21E0087979C /* YRbgcCollectionViewController.swift */; };
 		4733BD3B2266D2740087979C /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4733BD3A2266D2740087979C /* ItemCollectionViewCell.swift */; };
 		4733BD3F2266D4660087979C /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4733BD3E2266D4660087979C /* ListTableViewController.swift */; };
+		4733BD4122672B780087979C /* YREqualSpaceFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4733BD4022672B780087979C /* YREqualSpaceFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +27,11 @@
 		4733BD282266C2550087979C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4733BD2B2266C2550087979C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4733BD2D2266C2550087979C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4733BD342266C2890087979C /* YRbcsFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YRbcsFlowLayout.swift; sourceTree = "<group>"; };
+		4733BD342266C2890087979C /* YRSectionBgColorFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YRSectionBgColorFlowLayout.swift; sourceTree = "<group>"; };
 		4733BD372266D21E0087979C /* YRbgcCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YRbgcCollectionViewController.swift; sourceTree = "<group>"; };
 		4733BD3A2266D2740087979C /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		4733BD3E2266D4660087979C /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		4733BD4022672B780087979C /* YREqualSpaceFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YREqualSpaceFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +80,8 @@
 		4733BD332266C2740087979C /* YRCollectionViewLayout */ = {
 			isa = PBXGroup;
 			children = (
-				4733BD342266C2890087979C /* YRbcsFlowLayout.swift */,
+				4733BD342266C2890087979C /* YRSectionBgColorFlowLayout.swift */,
+				4733BD4022672B780087979C /* YREqualSpaceFlowLayout.swift */,
 			);
 			path = YRCollectionViewLayout;
 			sourceTree = "<group>";
@@ -165,9 +168,10 @@
 			files = (
 				4733BD3B2266D2740087979C /* ItemCollectionViewCell.swift in Sources */,
 				4733BD382266D21E0087979C /* YRbgcCollectionViewController.swift in Sources */,
+				4733BD4122672B780087979C /* YREqualSpaceFlowLayout.swift in Sources */,
 				4733BD242266C2530087979C /* ViewController.swift in Sources */,
 				4733BD3F2266D4660087979C /* ListTableViewController.swift in Sources */,
-				4733BD352266C2890087979C /* YRbcsFlowLayout.swift in Sources */,
+				4733BD352266C2890087979C /* YRSectionBgColorFlowLayout.swift in Sources */,
 				4733BD222266C2530087979C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

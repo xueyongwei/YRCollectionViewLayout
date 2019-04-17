@@ -95,7 +95,7 @@ extension ListTableViewController.Item {
         
         switch self {
         case .sectionBgColor:
-            let layout = YRbcsFlowLayout()
+            let layout = YRSectionBgColorFlowLayout()
             layout.scrollDirection = .vertical
             layout.itemSize = CGSize.init(width: 80, height: 80)
             layout.sectionInset = UIEdgeInsets.init(top: 20, left: 15, bottom: 20, right: 15)
