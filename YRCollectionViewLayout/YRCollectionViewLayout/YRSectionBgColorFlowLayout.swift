@@ -8,13 +8,8 @@
 
 import UIKit
 
-/** Yuri Background Color Section `s UICollectionViewFlowLayout
- 高频次使用的，每个分组一个背景色，或者每个分组都有一个圆角容器包裹，使用此FlowLayout，实现相应定制代理即可。
- */
-
-
 /// 遵循这个协议，实现特殊定制
-protocol YRbcsDelegateFlowLayout: UICollectionViewDelegateFlowLayout {
+protocol YRSectionBgColorDelegateFlowLayout: UICollectionViewDelegateFlowLayout {
     
     /// 背景色
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, backgroundColorForSectionAt section: Int) -> UIColor
@@ -26,7 +21,11 @@ protocol YRbcsDelegateFlowLayout: UICollectionViewDelegateFlowLayout {
 }
 
 
-/// 分组背景色及圆角布局
+/**
+ 分组添加背景色及圆角布局
+ 
+ - Note: 准守实现YRSectionBgColorDelegateFlowLayout协议，个性化定制四周扩展偏移、背景色、圆角大小等。
+ */
 class YRSectionBgColorFlowLayout: UICollectionViewFlowLayout {
     
     /// 装饰视图的属性
@@ -40,7 +39,7 @@ class YRSectionBgColorFlowLayout: UICollectionViewFlowLayout {
         
         self.register(YRbcsDecorationView.self, forDecorationViewOfKind: YRbcsLayoutAttributes.decorationViewKind)
         
-        guard let deleagte = self.collectionView?.delegate as? YRbcsDelegateFlowLayout,let numberOfSections = self.collectionView?.numberOfSections else { return  }
+        guard let deleagte = self.collectionView?.delegate as? YRSectionBgColorDelegateFlowLayout,let numberOfSections = self.collectionView?.numberOfSections else { return  }
         
         decorationAtts.removeAll()
         

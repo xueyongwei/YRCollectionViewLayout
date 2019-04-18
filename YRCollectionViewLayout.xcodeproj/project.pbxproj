@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4712418F2268282F000F5F66 /* NormalCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4712418E2268282F000F5F66 /* NormalCollectionViewController.swift */; };
 		4733BD222266C2530087979C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4733BD212266C2530087979C /* AppDelegate.swift */; };
 		4733BD242266C2530087979C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4733BD232266C2530087979C /* ViewController.swift */; };
 		4733BD272266C2530087979C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4733BD252266C2530087979C /* Main.storyboard */; };
@@ -16,10 +17,11 @@
 		4733BD382266D21E0087979C /* YRbgcCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4733BD372266D21E0087979C /* YRbgcCollectionViewController.swift */; };
 		4733BD3B2266D2740087979C /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4733BD3A2266D2740087979C /* ItemCollectionViewCell.swift */; };
 		4733BD3F2266D4660087979C /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4733BD3E2266D4660087979C /* ListTableViewController.swift */; };
-		4733BD4122672B780087979C /* YREqualSpaceFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4733BD4022672B780087979C /* YREqualSpaceFlowLayout.swift */; };
+		4733BD4122672B780087979C /* YREqualSpaceAlignFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4733BD4022672B780087979C /* YREqualSpaceAlignFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4712418E2268282F000F5F66 /* NormalCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalCollectionViewController.swift; sourceTree = "<group>"; };
 		4733BD1E2266C2530087979C /* YRCollectionViewLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YRCollectionViewLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4733BD212266C2530087979C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4733BD232266C2530087979C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,7 +33,7 @@
 		4733BD372266D21E0087979C /* YRbgcCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YRbgcCollectionViewController.swift; sourceTree = "<group>"; };
 		4733BD3A2266D2740087979C /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		4733BD3E2266D4660087979C /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
-		4733BD4022672B780087979C /* YREqualSpaceFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YREqualSpaceFlowLayout.swift; sourceTree = "<group>"; };
+		4733BD4022672B780087979C /* YREqualSpaceAlignFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YREqualSpaceAlignFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				4733BD342266C2890087979C /* YRSectionBgColorFlowLayout.swift */,
-				4733BD4022672B780087979C /* YREqualSpaceFlowLayout.swift */,
+				4733BD4022672B780087979C /* YREqualSpaceAlignFlowLayout.swift */,
 			);
 			path = YRCollectionViewLayout;
 			sourceTree = "<group>";
@@ -91,6 +93,7 @@
 			children = (
 				4733BD372266D21E0087979C /* YRbgcCollectionViewController.swift */,
 				4733BD3A2266D2740087979C /* ItemCollectionViewCell.swift */,
+				4712418E2268282F000F5F66 /* NormalCollectionViewController.swift */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -167,8 +170,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4733BD3B2266D2740087979C /* ItemCollectionViewCell.swift in Sources */,
+				4712418F2268282F000F5F66 /* NormalCollectionViewController.swift in Sources */,
 				4733BD382266D21E0087979C /* YRbgcCollectionViewController.swift in Sources */,
-				4733BD4122672B780087979C /* YREqualSpaceFlowLayout.swift in Sources */,
+				4733BD4122672B780087979C /* YREqualSpaceAlignFlowLayout.swift in Sources */,
 				4733BD242266C2530087979C /* ViewController.swift in Sources */,
 				4733BD3F2266D4660087979C /* ListTableViewController.swift in Sources */,
 				4733BD352266C2890087979C /* YRSectionBgColorFlowLayout.swift in Sources */,

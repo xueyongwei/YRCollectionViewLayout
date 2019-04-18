@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class YRbgcCollectionViewController: UICollectionViewController {
 
     override func viewDidLoad() {
@@ -28,7 +29,7 @@ class YRbgcCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 30
+        return 10
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -41,7 +42,7 @@ class YRbgcCollectionViewController: UICollectionViewController {
 
 }
 
-extension YRbgcCollectionViewController:YRbcsDelegateFlowLayout{
+extension YRbgcCollectionViewController:YRSectionBgColorDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sectionCornerRadiusFor section: Int) -> CGFloat {
         
