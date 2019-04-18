@@ -20,7 +20,11 @@ class ListTableViewController: UITableViewController {
             Item.lineAlignLeft,
             Item.lineAlignCenter,
             Item.lineAlignRight,
+        ],
+        [
+            Item.form
         ]
+        
     ]
     
     //MARK:控件
@@ -71,10 +75,15 @@ extension ListTableViewController {
     enum Item {
         
         case sectionBgColor
+        
         case lineAlignLeft
         case lineAlignCenter
         case lineAlignRight
+        
+        case form
+        
         case undefined
+        
         
         var name:String{
             switch self {
@@ -86,6 +95,8 @@ extension ListTableViewController {
                 return "行居中对齐"
             case .lineAlignRight:
                 return "行居右对齐"
+            case .form:
+                return "Excel表格"
             default:
                 return "未定义"
             }
@@ -141,6 +152,14 @@ extension ListTableViewController.Item {
             layout.sectionInset = UIEdgeInsets.init(top: 20, left: 15, bottom: 20, right: 15)
             
             let vc = NormalCollectionViewController.init(collectionViewLayout: layout)
+            return vc
+        case .form:
+            let layout = YRFormFLowLayout()
+            layout.scrollDirection = .vertical
+            layout.itemSize = CGSize.init(width: 80, height: 80)
+            layout.sectionInset = UIEdgeInsets.init(top: 20, left: 15, bottom: 20, right: 15)
+            
+            let vc = YRFormCollectionViewController.init(collectionViewLayout: layout)
             return vc
         default:
             return nil

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4712418F2268282F000F5F66 /* NormalCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4712418E2268282F000F5F66 /* NormalCollectionViewController.swift */; };
+		4712419122682F72000F5F66 /* YRFormFLowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4712419022682F72000F5F66 /* YRFormFLowLayout.swift */; };
+		4712419322688710000F5F66 /* YRFormCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4712419222688710000F5F66 /* YRFormCollectionViewController.swift */; };
 		4733BD222266C2530087979C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4733BD212266C2530087979C /* AppDelegate.swift */; };
 		4733BD242266C2530087979C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4733BD232266C2530087979C /* ViewController.swift */; };
 		4733BD272266C2530087979C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4733BD252266C2530087979C /* Main.storyboard */; };
@@ -22,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		4712418E2268282F000F5F66 /* NormalCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalCollectionViewController.swift; sourceTree = "<group>"; };
+		4712419022682F72000F5F66 /* YRFormFLowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YRFormFLowLayout.swift; sourceTree = "<group>"; };
+		4712419222688710000F5F66 /* YRFormCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YRFormCollectionViewController.swift; sourceTree = "<group>"; };
 		4733BD1E2266C2530087979C /* YRCollectionViewLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YRCollectionViewLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4733BD212266C2530087979C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4733BD232266C2530087979C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +88,7 @@
 			children = (
 				4733BD342266C2890087979C /* YRSectionBgColorFlowLayout.swift */,
 				4733BD4022672B780087979C /* YREqualSpaceAlignFlowLayout.swift */,
+				4712419022682F72000F5F66 /* YRFormFLowLayout.swift */,
 			);
 			path = YRCollectionViewLayout;
 			sourceTree = "<group>";
@@ -94,6 +99,7 @@
 				4733BD372266D21E0087979C /* YRbgcCollectionViewController.swift */,
 				4733BD3A2266D2740087979C /* ItemCollectionViewCell.swift */,
 				4712418E2268282F000F5F66 /* NormalCollectionViewController.swift */,
+				4712419222688710000F5F66 /* YRFormCollectionViewController.swift */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -174,7 +180,9 @@
 				4733BD382266D21E0087979C /* YRbgcCollectionViewController.swift in Sources */,
 				4733BD4122672B780087979C /* YREqualSpaceAlignFlowLayout.swift in Sources */,
 				4733BD242266C2530087979C /* ViewController.swift in Sources */,
+				4712419122682F72000F5F66 /* YRFormFLowLayout.swift in Sources */,
 				4733BD3F2266D4660087979C /* ListTableViewController.swift in Sources */,
+				4712419322688710000F5F66 /* YRFormCollectionViewController.swift in Sources */,
 				4733BD352266C2890087979C /* YRSectionBgColorFlowLayout.swift in Sources */,
 				4733BD222266C2530087979C /* AppDelegate.swift in Sources */,
 			);
