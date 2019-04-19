@@ -155,6 +155,8 @@ extension ListTableViewController.Item {
             return vc
         case .form:
             let layout = YRFormFLowLayout()
+            layout.suspendRowNum = 1
+            layout.suspendSectionNum = 1
             layout.scrollDirection = .vertical
             layout.itemSize = CGSize.init(width: 80, height: 80)
             layout.sectionInset = UIEdgeInsets.init(top: 20, left: 15, bottom: 20, right: 15)
