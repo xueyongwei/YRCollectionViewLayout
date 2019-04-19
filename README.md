@@ -12,7 +12,7 @@ let layout = YRSectionBgColorFlowLayout()
 ```
 let vc = YRbgcCollectionViewController.init(collectionViewLayout: layout)
 ```
-3. DONE
+3. **DONE**
 
 ### 效果展示
 
