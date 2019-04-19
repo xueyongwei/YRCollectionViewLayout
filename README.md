@@ -16,6 +16,9 @@ let vc = YRbgcCollectionViewController.init(collectionViewLayout: layout)
 
 ### 效果展示
 
+Gif图不动的话，可能是网络慢等一下。
+如果后面的图不动了，是因为gif播放完了，刷新一下查看动画。
+
 ##### 分组背景色、圆角等
 
 
