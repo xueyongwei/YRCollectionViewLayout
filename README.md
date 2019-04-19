@@ -21,19 +21,25 @@ let vc = YRbgcCollectionViewController.init(collectionViewLayout: layout)
 ![效果](https://raw.githubusercontent.com/xueyongwei/YRCollectionViewLayout/master/gif/YRSectionBgColor.gif)
 
 
+可以通过实现代理完成：背景色、圆角大小、四周扩展的个性化定制。
+
 ##### 改变每一行的对齐方式(等间距)
 
+【居中】
 ![居中](https://raw.githubusercontent.com/xueyongwei/YRCollectionViewLayout/master/gif/YRAlignLineCenter.gif)
 
+【居左】
 ![居左](https://raw.githubusercontent.com/xueyongwei/YRCollectionViewLayout/master/gif/YRAlignLineLeft.gif)
 
+【居右】
 ![居右](https://raw.githubusercontent.com/xueyongwei/YRCollectionViewLayout/master/gif/YRAlignLineRight.gif)
 
 ##### Excel的表格锁定行列、类似tableView的headerView
 
-
+【锁定列】
 ![锁定列](https://raw.githubusercontent.com/xueyongwei/YRCollectionViewLayout/master/gif/YRFormLockV.gif)
 
 
+【锁定行】
 ![锁定行](https://raw.githubusercontent.com/xueyongwei/YRCollectionViewLayout/master/gif/YRFormLockH.gif)
 
