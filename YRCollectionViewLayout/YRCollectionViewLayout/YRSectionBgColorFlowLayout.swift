@@ -29,7 +29,7 @@ protocol YRSectionBgColorDelegateFlowLayout: UICollectionViewDelegateFlowLayout 
 class YRSectionBgColorFlowLayout: UICollectionViewFlowLayout {
     
     /// 装饰视图的属性
-    fileprivate var decorationAtts = [YRbcsLayoutAttributes]()
+    fileprivate var decorationAtts = [YRSBCLayoutAttributes]()
     
     
     override func prepare() {
@@ -37,7 +37,7 @@ class YRSectionBgColorFlowLayout: UICollectionViewFlowLayout {
         super.prepare()
         
         
-        self.register(YRbcsDecorationView.self, forDecorationViewOfKind: YRbcsLayoutAttributes.decorationViewKind)
+        self.register(YRSBCDecorationView.self, forDecorationViewOfKind: YRSBCLayoutAttributes.decorationViewKind)
         
         guard let deleagte = self.collectionView?.delegate as? YRSectionBgColorDelegateFlowLayout,let numberOfSections = self.collectionView?.numberOfSections else { return  }
         
@@ -46,11 +46,11 @@ class YRSectionBgColorFlowLayout: UICollectionViewFlowLayout {
         for section in 0..<numberOfSections {
             
             guard let numberOfItems = self.collectionView?.numberOfItems(inSection: section),numberOfItems > 0 ,
-            let firstItem = self.layoutAttributesForItem(at: IndexPath.init(item: 0, section: section)),
-            let lastItem = self.layoutAttributesForItem(at: IndexPath.init(item: numberOfItems - 1, section: section))
-            else {
-                
-                continue
+                let firstItem = self.layoutAttributesForItem(at: IndexPath.init(item: 0, section: section)),
+                let lastItem = self.layoutAttributesForItem(at: IndexPath.init(item: numberOfItems - 1, section: section))
+                else {
+                    
+                    continue
             }
             
             var maxX:CGFloat = 0
@@ -93,7 +93,7 @@ class YRSectionBgColorFlowLayout: UICollectionViewFlowLayout {
             sectionFrame.size.height += (edgeInset.top + edgeInset.bottom)
             
             /// 创建一个attribute
-            let newAtt = YRbcsLayoutAttributes(forDecorationViewOfKind: YRbcsLayoutAttributes.decorationViewKind, with: IndexPath(item: 0, section: section))
+            let newAtt = YRSBCLayoutAttributes(forDecorationViewOfKind: YRSBCLayoutAttributes.decorationViewKind, with: IndexPath(item: 0, section: section))
             newAtt.frame = sectionFrame
             newAtt.zIndex = -1
             
@@ -127,10 +127,10 @@ class YRSectionBgColorFlowLayout: UICollectionViewFlowLayout {
     }
 }
 
-//MARK: - --------------YRbcsDecorationView--------------
+//MARK: - --------------YRSBCDecorationView--------------
 
 /// 装饰视图
-class YRbcsDecorationView: UICollectionReusableView {
+class YRSBCDecorationView: UICollectionReusableView {
     
     //MARK:属性
     private var defaultBackgroundColor = UIColor.white
@@ -138,7 +138,7 @@ class YRbcsDecorationView: UICollectionReusableView {
     override func apply(_ layoutAttributes: UICollectionViewLayoutAttributes) {
         
         super.apply(layoutAttributes)
-        if let att = layoutAttributes as? YRbcsLayoutAttributes {
+        if let att = layoutAttributes as? YRSBCLayoutAttributes {
             self.backgroundColor =  att.bgColor
             self.layer.cornerRadius = att.cornerRadius
         }
@@ -164,14 +164,14 @@ class YRbcsDecorationView: UICollectionReusableView {
 }
 
 
-//MARK: - --------------YRbcsLayoutAttributes--------------
+//MARK: - --------------YRSBCLayoutAttributes--------------
 /// LayoutAttributes
-class YRbcsLayoutAttributes: UICollectionViewLayoutAttributes{
+class YRSBCLayoutAttributes: UICollectionViewLayoutAttributes{
     
     var bgColor = UIColor.white
     var cornerRadius:CGFloat = 10
     
     /// 标识符
-    static var decorationViewKind = "YRbcsDecorationView"
+    static var decorationViewKind = "YRSBCDecorationView"
     
 }
