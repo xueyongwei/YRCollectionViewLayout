@@ -22,7 +22,8 @@ class ListTableViewController: UITableViewController {
             Item.lineAlignRight,
         ],
         [
-            Item.form
+            Item.form,
+            Item.leftAlignFlow
         ]
         
     ]
@@ -84,6 +85,7 @@ extension ListTableViewController {
         
         case undefined
         
+        case leftAlignFlow
         
         var name:String{
             switch self {
@@ -97,6 +99,8 @@ extension ListTableViewController {
                 return "行居右对齐"
             case .form:
                 return "Excel表格"
+            case .leftAlignFlow:
+                return "左对齐瀑布流"
             default:
                 return "未定义"
             }
@@ -162,6 +166,15 @@ extension ListTableViewController.Item {
             layout.sectionInset = UIEdgeInsets.init(top: 20, left: 15, bottom: 20, right: 15)
             
             let vc = YRFormCollectionViewController.init(collectionViewLayout: layout)
+            return vc
+            
+        case .leftAlignFlow:
+            let layout = YRLeftAlignFlowLayout()
+            layout.estimatedItemSize = CGSize.init(width: 40, height: 30)
+            layout.scrollDirection = .vertical
+            layout.sectionInset = UIEdgeInsets.init(top: 20, left: 15, bottom: 20, right: 15)
+            
+            let vc = YRLeftAlignFlowCollectionViewController.init(collectionViewLayout: layout)
             return vc
         default:
             return nil

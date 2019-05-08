@@ -20,6 +20,8 @@
 		4733BD3B2266D2740087979C /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4733BD3A2266D2740087979C /* ItemCollectionViewCell.swift */; };
 		4733BD3F2266D4660087979C /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4733BD3E2266D4660087979C /* ListTableViewController.swift */; };
 		4733BD4122672B780087979C /* YREqualSpaceAlignFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4733BD4022672B780087979C /* YREqualSpaceAlignFlowLayout.swift */; };
+		479DC1FB22828C5100FE6594 /* YRLeftAlignFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479DC1FA22828C5100FE6594 /* YRLeftAlignFlowLayout.swift */; };
+		479DC1FD2282AF4900FE6594 /* YRLeftAlignFlowCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479DC1FC2282AF4900FE6594 /* YRLeftAlignFlowCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		4733BD3A2266D2740087979C /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		4733BD3E2266D4660087979C /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		4733BD4022672B780087979C /* YREqualSpaceAlignFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YREqualSpaceAlignFlowLayout.swift; sourceTree = "<group>"; };
+		479DC1FA22828C5100FE6594 /* YRLeftAlignFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YRLeftAlignFlowLayout.swift; sourceTree = "<group>"; };
+		479DC1FC2282AF4900FE6594 /* YRLeftAlignFlowCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YRLeftAlignFlowCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 				4733BD342266C2890087979C /* YRSectionBgColorFlowLayout.swift */,
 				4733BD4022672B780087979C /* YREqualSpaceAlignFlowLayout.swift */,
 				4712419022682F72000F5F66 /* YRFormFLowLayout.swift */,
+				479DC1FA22828C5100FE6594 /* YRLeftAlignFlowLayout.swift */,
 			);
 			path = YRCollectionViewLayout;
 			sourceTree = "<group>";
@@ -100,6 +105,7 @@
 				4733BD3A2266D2740087979C /* ItemCollectionViewCell.swift */,
 				4712418E2268282F000F5F66 /* NormalCollectionViewController.swift */,
 				4712419222688710000F5F66 /* YRFormCollectionViewController.swift */,
+				479DC1FC2282AF4900FE6594 /* YRLeftAlignFlowCollectionViewController.swift */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -182,6 +188,8 @@
 				4733BD242266C2530087979C /* ViewController.swift in Sources */,
 				4712419122682F72000F5F66 /* YRFormFLowLayout.swift in Sources */,
 				4733BD3F2266D4660087979C /* ListTableViewController.swift in Sources */,
+				479DC1FB22828C5100FE6594 /* YRLeftAlignFlowLayout.swift in Sources */,
+				479DC1FD2282AF4900FE6594 /* YRLeftAlignFlowCollectionViewController.swift in Sources */,
 				4712419322688710000F5F66 /* YRFormCollectionViewController.swift in Sources */,
 				4733BD352266C2890087979C /* YRSectionBgColorFlowLayout.swift in Sources */,
 				4733BD222266C2530087979C /* AppDelegate.swift in Sources */,
@@ -331,8 +339,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 42FQR4EVHR;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 8A25PUJZK7;
 				INFOPLIST_FILE = YRCollectionViewLayout/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -341,7 +349,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Yuri.YRCollectionViewLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = appTest;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -352,8 +360,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 42FQR4EVHR;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = YRCollectionViewLayout/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
